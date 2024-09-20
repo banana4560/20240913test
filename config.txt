@@ -1,0 +1,2 @@
+git config --global user.name banana4560
+git config --global user.email andy0916903551@gmail.com
