@@ -9,10 +9,21 @@ body {
 
 /* 頁首樣式 */
 header {
-  background: rgba(51, 51, 51, 0.8);
-  color: #fff;
+  background: rgb(255, 219, 60);
+  color: #000000;
   padding: 10px 0;
   text-align: center;
+}
+
+footer {
+  display: flex; /* 啟用 Flexbox 布局 */
+  justify-content: center; /* 將內容置中對齊 */
+  align-items: center; /* 垂直居中 */
+  flex-wrap: wrap; /* 如果內容過多，允許換行 */
+}
+
+footer p {
+  margin: 0 10px; /* 設定每段內容的水平間距 */
 }
 
 /* 導覽列樣式 */
@@ -99,3 +110,19 @@ iframe {
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
+.color-btn {
+  background-color: #ecd75d; /* 顏色背景 */
+  color: #000000; /* 文字顏色 */
+  border-radius: 10px; /* 更大的圓角 */
+  padding: 10px 20px; /* 按鈕的內邊距 */
+  font-size: 16px; /* 按鈕文字大小 */
+  transition: background-color 0.3s; /* 滑鼠懸停時的過渡效果 */
+}
+
+.color-btn:hover {
+  background-color: #dfc94f; /* 懸停時的背景顏色 */
+  color: #000000; /* 文字顏色 */
+}
+
+
