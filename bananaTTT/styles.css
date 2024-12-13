@@ -1,7 +1,7 @@
 /* 頁面基本樣式 */
 body {
-  background-color: #ffffff;
-  /*background-image: url('/banana/Image/BG.PNG');*/
+  background-color: #f4f4f4;
+  background-image: url('your-background-image.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -139,18 +139,17 @@ img {
   color: #000000; /* 文字顏色 */
 }
 
-/* Portfolio 背景 */
-.portfolio {
-  height: 80vh;
-  overflow-y: auto;
+
+/* Portfolio 左右區塊 */
+.portfolio{
+  height: 100vh; /* 區塊高度等於視窗高度 */
+  overflow-y: auto; /* 滾動效果 */
   background: url('Image/CAT.jpg') no-repeat center center fixed;
   background-size: cover;
-  opacity: 1; /* 初始透明度 */
-
 }
 
-.row-about{
-  padding: 10px 0; /* 上下增加內邊距 */ 
-  background-color: #ececec;
-  border-radius: 10px;
+/* 卡片樣式 */
+.card {
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
 }
