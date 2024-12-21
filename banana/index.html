@@ -56,9 +56,19 @@
     </div>
   </div>
   
+
+
+<!-- 滿版圖片區塊 -->
+<div id="full-width-image">
+  <img id="current-image" src="/banana/Image/Anim/1.jpg" alt="滿版圖片">
+</div>
+  
+
+
   <!-- 作品集 -->
   <div id="portfolio" class="container">
     <div class="row">
+       <!-- 
       <div v-for="item in Portfolio" :key="item.id" class="col-md-4 portfolio">
         <div class="card">
           <img :src="'/banana/image/'+item.imgSrc" class="card-img-top" alt="作品圖片">
@@ -67,55 +77,73 @@
             <p class="card-text">{{item.description}}</p>
           </div>
         </div>
+      </div>   -->
+
+      <!-- 滿版圖片區塊 -->
+      <div class="col-md-4 portfolio">
+
+          <div id="image-container">
+            <img id="current-image" src="/banana/Image/Anim/1.jpg" alt="展示圖片">
+          </div>
+
       </div>
+
       
-      <!-- 
       <div class="col-md-4 portfolio">
         <div class="card">
-          <img src="example-image.jpg" class="card-img-top" alt="作品圖片">
+          <img src="/banana/Image/HW1.jpg" class="card-img-top" alt="作品圖片">
           <div class="card-body text-center">
-            <h5 class="card-title">作品2</h5>
-            <p class="card-text">什麼作品</p>
+            <h5 class="card-title">基礎設計</h5>
+            <p class="card-text">色彩調和</p>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4 portfolio">
+        <div class="card">
+          <img src="/banana/Image/HW2.jpg" class="card-img-top" alt="作品圖片">
+          <div class="card-body text-center">
+            <h5 class="card-title">攝影</h5>
+            <p class="card-text">危險熊熊</p>
           </div>
         </div>
       </div>
       <div class="col-md-4 portfolio">
         <div class="card">
-          <img src="example-image.jpg" class="card-img-top" alt="作品圖片">
+          <img src="/banana/Image/HW3.jpg" class="card-img-top" alt="作品圖片">
           <div class="card-body text-center">
-            <h5 class="card-title">作品3</h5>
-            <p class="card-text">什麼作品</p>
+            <h5 class="card-title">多媒體概論</h5>
+            <p class="card-text">人臉文字</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card">
-          <iframe class="card-img-top youtube-iframe" src="https://www.youtube.com/embed/example-video-id" frameborder="0" allowfullscreen></iframe>
+          <iframe class="card-img-top youtube-iframe" src="https://www.youtube.com/embed/CtNxAPbndVo?si=M8g2ioW3QgsNQR3w" frameborder="0" allowfullscreen></iframe>
           <div class="card-body text-center">
-            <h5 class="card-title">作品4</h5>
-            <p class="card-text">什麼作品</p>
+            <h5 class="card-title">媒體設計基礎</h5>
+            <p class="card-text">手翻書:火柴忍者</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card">
-          <iframe class="card-img-top youtube-iframe" src="https://www.youtube.com/embed/example-video-id" frameborder="0" allowfullscreen></iframe>
+          <iframe class="card-img-top youtube-iframe" src="https://www.youtube.com/embed/6gMCfyD748A?si=5kawoTmdijiPy_6v" frameborder="0" allowfullscreen></iframe>
           <div class="card-body text-center">
-            <h5 class="card-title">作品5</h5>
-            <p class="card-text">什麼作品</p>
+            <h5 class="card-title">媒體設計基礎</h5>
+            <p class="card-text">DUCK STORY-偶動畫</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card">
-          <iframe class="card-img-top youtube-iframe" src="https://www.youtube.com/embed/example-video-id" frameborder="0" allowfullscreen></iframe>
+          <iframe class="card-img-top youtube-iframe" src="https://www.youtube.com/embed/GikJHwruOWM?si=uD5WXxC7lI0QEF1A" frameborder="0" allowfullscreen></iframe>
           <div class="card-body text-center">
-            <h5 class="card-title">作品6</h5>
-            <p class="card-text">什麼作品</p>
+            <h5 class="card-title">媒體設計基礎</h5>
+            <p class="card-text">光柵動畫:青蛙吃蟲</p>
           </div>
         </div>
       </div>
-      -->
+
       <!-- 坦克遊戲 -->
       <!--<div class="game-container col-md-12"> -->
       <!--   <iframe class="game-iframe" src="/banana/game/" frameborder="0"></iframe>  -->
@@ -133,62 +161,85 @@
     <div class="row">
       <div class="col-md-4">
         <div class="card">
+          <iframe class="card-img-top" src="https://www.youtube.com/embed/w1EdA1FPbt0?si=j8iZ2V2X5aQXi0em" frameborder="0" allowfullscreen></iframe>
+          <div class="card-body text-center">
+            <h5 class="card-title">【Apex Legends】</h5>
+            <p class="card-text">第12賽季大師之旅</p>
+          </div>
+        </div>
+      </div> 
+      <div class="col-md-4">
+        <div class="card">
           <iframe class="card-img-top" src="https://www.youtube.com/embed/Otzrn3CcXxM?si=Znv7wv-dlZrECFub" frameborder="0" allowfullscreen></iframe>
           <div class="card-body text-center">
-            <h5 class="card-title">影片1</h5>
-            <p class="card-text">影片</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 
-      <div class="col-md-4">
-        <div class="card">
-          <iframe class="card-img-top" src="https://www.youtube.com/embed/example-video-id" frameborder="0" allowfullscreen></iframe>
-          <div class="card-body text-center">
-            <h5 class="card-title">影片2</h5>
-            <p class="card-text">影片</p>
+            <h5 class="card-title">【Apex Legends】</h5>
+            <p class="card-text">13賽季精華#1</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card">
-          <iframe class="card-img-top" src="https://www.youtube.com/embed/example-video-id" frameborder="0" allowfullscreen></iframe>
+          <iframe class="card-img-top" src="https://www.youtube.com/embed/PJRD_ikvCcQ?si=wlD8qh0GdLVlVVCn" frameborder="0" allowfullscreen></iframe>
           <div class="card-body text-center">
-            <h5 class="card-title">影片3</h5>
-            <p class="card-text">影片</p>
+            <h5 class="card-title">【Apex Legends】</h5>
+            <p class="card-text">13賽季精華#2</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card">
-          <iframe class="card-img-top" src="https://www.youtube.com/embed/example-video-id" frameborder="0" allowfullscreen></iframe>
+          <iframe class="card-img-top" src="https://www.youtube.com/embed/n0c0mq42vyA?si=9Nqp_xXiQAo70J0C" frameborder="0" allowfullscreen></iframe>
           <div class="card-body text-center">
-            <h5 class="card-title">影片4</h5>
-            <p class="card-text">影片</p>
+            <h5 class="card-title">【Apex Legends】</h5>
+            <p class="card-text">14賽季精華#1</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card">
-          <iframe class="card-img-top" src="https://www.youtube.com/embed/example-video-id" frameborder="0" allowfullscreen></iframe>
+          <iframe class="card-img-top" src="https://www.youtube.com/embed/7Me7ZeLhU_c?si=rKlk56FawVBbZhtJ" frameborder="0" allowfullscreen></iframe>
           <div class="card-body text-center">
-            <h5 class="card-title">影片5</h5>
-            <p class="card-text">影片</p>
+            <h5 class="card-title">【Apex Legends】</h5>
+            <p class="card-text">14賽季精華#2</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card">
-          <iframe class="card-img-top" src="https://www.youtube.com/embed/example-video-id" frameborder="0" allowfullscreen></iframe>
+          <iframe class="card-img-top" src="https://www.youtube.com/embed/trrzmqYkuHo?si=w1KpBiHNGLdCerYV" frameborder="0" allowfullscreen></iframe>
           <div class="card-body text-center">
-            <h5 class="card-title">影片6</h5>
-            <p class="card-text">影片</p>
+            <h5 class="card-title">【Apex Legends】</h5>
+            <p class="card-text">15賽季精華</p>
           </div>
         </div>
       </div>
-      -->
-
+      <div class="col-md-4">
+        <div class="card">
+          <iframe class="card-img-top" src="https://www.youtube.com/embed/w9R5taoQnwQ?si=KSTAkplxoI5CK1BC" frameborder="0" allowfullscreen></iframe>
+          <div class="card-body text-center">
+            <h5 class="card-title">【Apex Legends】</h5>
+            <p class="card-text">16賽季精華</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <iframe class="card-img-top" src="https://www.youtube.com/embed/Cfbl0jx0o9g?si=LxKZIncRTvBdNEZr" frameborder="0" allowfullscreen></iframe>
+          <div class="card-body text-center">
+            <h5 class="card-title">【Apex Legends】</h5>
+            <p class="card-text">17賽季精華</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <iframe class="card-img-top" src="https://www.youtube.com/embed/EmCG-vx2jrI?si=iylG-rIciqgmANj3" frameborder="0" allowfullscreen></iframe>
+          <div class="card-body text-center">
+            <h5 class="card-title">【Apex Legends】</h5>
+            <p class="card-text">18賽季精華</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>  
 
