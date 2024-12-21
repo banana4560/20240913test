@@ -182,7 +182,7 @@ img {
 /* 滿版圖片樣式 */
 #full-width-image {
   width: 100%;
-  height: 100vh; /* 滿屏高度 */
+  height: 80vh; /* 滿屏高度 */
   position: relative;
   overflow: hidden; /* 確保圖片保持在容器內 */
 }

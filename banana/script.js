@@ -15,12 +15,9 @@ function showSection(sectionId) {
 
 // 定義圖片列表
 const images = [
-  "/banana/Image/Anim/1.jpg", "/banana/Image/Anim/2.jpg", "/banana/Image/Anim/3.jpg",
-  "/banana/Image/Anim/4.jpg", "/banana/Image/Anim/5.jpg", "/banana/Image/Anim/6.jpg",
-  "/banana/Image/Anim/7.jpg", "/banana/Image/Anim/8.jpg", "/banana/Image/Anim/9.jpg",
-  "/banana/Image/Anim/10.jpg", "/banana/Image/Anim/11.jpg", "/banana/Image/Anim/12.jpg",
-  "/banana/Image/Anim/13.jpg", "/banana/Image/Anim/14.jpg", "/banana/Image/Anim/15.jpg",
-  "/banana/Image/Anim/16.jpg"
+  "/banana/Image/Anim/1.jpg", "/banana/Image/Anim/3.jpg", "/banana/Image/Anim/5.jpg",
+  "/banana/Image/Anim/7.jpg", "/banana/Image/Anim/9.jpg", "/banana/Image/Anim/11.jpg",
+  "/banana/Image/Anim/13.jpg", "/banana/Image/Anim/15.jpg"
 ];
 
 // 當前圖片索引
@@ -29,15 +26,38 @@ let currentIndex = 0;
 // 獲取圖片元素
 const imageElement = document.getElementById("current-image");
 
-// 監聽滾輪事件
-document.addEventListener("wheel", (event) => {
-  // 當前圖片是最後一張
-  if (currentIndex === images.length - 1) {
-    // 阻止滾動，直到到達最後一張圖片後才允許頁面滾動
-    if (event.deltaY > 0) {
-      event.preventDefault();
-      return;  // 阻止頁面滾動
+// 創建 IntersectionObserver 用來檢測圖片是否進入視窗
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    // 當圖片進入視窗時才會觸發滾動事件
+    if (entry.isIntersecting) {
+      // 開啟滾動事件監聽
+      enableWheelEvent();
+    } else {
+      // 當圖片離開視窗時停止滾動事件監聽
+      disableWheelEvent();
     }
+  });
+}, { threshold: 0.2 });  // threshold 0.2 表示圖片有 20% 進入視窗時才觸發
+
+// 開始監視圖片元素
+observer.observe(imageElement);
+
+// 停止滾動監聽
+function disableWheelEvent() {
+  document.removeEventListener("wheel", handleWheel);
+}
+
+// 啟動滾動監聽
+function enableWheelEvent() {
+  document.addEventListener("wheel", handleWheel);
+}
+
+// 處理滾輪事件
+function handleWheel(event) {
+  // 如果圖片還沒到最後一張，阻止頁面滾動
+  if (currentIndex < images.length - 1) {
+    event.preventDefault(); // 阻止頁面滾動
   }
 
   // 判斷滾輪方向
@@ -54,4 +74,10 @@ document.addEventListener("wheel", (event) => {
       imageElement.src = images[currentIndex];
     }
   }
-});
+
+  // 如果切換到最後一張圖片，允許頁面滾動
+  if (currentIndex === images.length - 1) {
+    // 在這裡可以做任何操作來通知用戶圖片已經是最後一張
+    console.log("已到達最後一張圖片，可以繼續頁面滾動");
+  }
+}
