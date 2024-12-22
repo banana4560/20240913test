@@ -38,7 +38,7 @@ const observer = new IntersectionObserver((entries, observer) => {
       disableWheelEvent();
     }
   });
-}, { threshold: 1 });  // threshold 1 表示圖片有 100% 進入視窗時才觸發
+}, { threshold: 0.5 });  // threshold 0.5 表示圖片有 50% 進入視窗時才觸發
 
 // 開始監視圖片元素
 observer.observe(imageElement);
