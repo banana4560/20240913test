@@ -11,7 +11,7 @@ var ProfolioDB = DB.create(__dirname + "/profolio.db"); // 創建資料庫實例
 // 使用 Express 內建的靜態檔案中介軟體提供靜態資源
 server.use(express.static(__dirname + "/banana"));
 
-server.get("/banana/index", (req,res)=>{
+server.get("/profolio", (req,res)=>{
   //DB
   ProfolioDB.find({}).then(results=>{
     if(results != null){
