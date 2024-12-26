@@ -9,7 +9,10 @@ var vueProfolio = createApp({
                 {id:"3",imgSrc:"HW3.jpg",title:"多媒體概論",description:"人臉文字"},
                 {id:"4",imgSrc:"HW4.gif",title:"動畫",description:"冒險家小布丁"},
                 {id:"5",imgSrc:"HW5.png",title:"遊戲小專題-街霸:血藍風暴",description:"雙人對戰、單機格鬥"},
-                {id:"6",imgSrc:"HW6.png",title:"色彩學",description:"個人海報"}
+                {id:"6",imgSrc:"HW6.png",title:"色彩學",description:"個人海報"},
+                {id:"7",imgSrc:"HW7.jpg",title:"三維電腦繪圖",description:"Maya-Glock17建模"},  
+                {id:"8",imgSrc:"HW8.jpg",title:"三維電腦繪圖",description:"Maya-場景建模"},   
+                {id:"9",imgSrc:"HW9.jpg",title:"三維電腦繪圖",description:"Maya-檯燈建模"}             
             ],
             PortfolioYT:[
                 {id:"1",youtube:"https://www.youtube.com/embed/GikJHwruOWM?si=uD5WXxC7lI0QEF1A",title:"媒體設計基礎",description:"光柵動畫:青蛙吃蟲"},
@@ -33,7 +36,10 @@ var vueEntertainment = createApp({
                 {id:"6",youtube:"https://www.youtube.com/embed/trrzmqYkuHo?si=w1KpBiHNGLdCerYV",title:"【Apex Legends】",description:"15賽季精華"},
                 {id:"7",youtube:"https://www.youtube.com/embed/w9R5taoQnwQ?si=KSTAkplxoI5CK1BC",title:"【Apex Legends】",description:"16賽季精華"},
                 {id:"8",youtube:"https://www.youtube.com/embed/Cfbl0jx0o9g?si=LxKZIncRTvBdNEZr",title:"【Apex Legends】",description:"17賽季精華"},
-                {id:"9",youtube:"https://www.youtube.com/embed/EmCG-vx2jrI?si=iylG-rIciqgmANj3",title:"【Apex Legends】",description:"18賽季精華"} 
+                {id:"9",youtube:"https://www.youtube.com/embed/EmCG-vx2jrI?si=iylG-rIciqgmANj3",title:"【Apex Legends】",description:"18賽季精華"},
+                {id:"10",youtube:"https://www.youtube.com/embed/7kMxHRKSlFI?si=tnIERy4X2DhMzThs",title:"【排球】",description:"大設盃-中科多媒VS亞洲數媒"},
+                {id:"11",youtube:"https://www.youtube.com/embed/iu8LvWWj4hM?si=ED1LOgxnfhSlkhmB",title:"【排球】",description:"室內場-1"},
+                {id:"12",youtube:"https://www.youtube.com/embed/Dtj5p-4MUlM?si=uDn4B4RLteBWRcSl",title:"【排球】",description:"室內場-2"}  
             ]
         }
     }
