@@ -4,7 +4,7 @@ var vueProfolio = createApp({
     data() {
         return{
             PortfolioImg:[
-               /* {id:"1",imgSrc:"HW1.jpg",title:"基礎設計",description:"色彩調和"},
+                {id:"1",imgSrc:"HW1.jpg",title:"基礎設計",description:"色彩調和"},
                 {id:"2",imgSrc:"HW2.jpg",title:"攝影",description:"危險熊熊"},
                 {id:"3",imgSrc:"HW3.jpg",title:"多媒體概論",description:"人臉文字"},
                 {id:"4",imgSrc:"HW4.gif",title:"動畫",description:"冒險家小布丁"},
@@ -12,7 +12,7 @@ var vueProfolio = createApp({
                 {id:"6",imgSrc:"HW6.png",title:"色彩學",description:"個人海報"},
                 {id:"7",imgSrc:"HW7.jpg",title:"三維電腦繪圖",description:"Maya-Glock17建模"},  
                 {id:"8",imgSrc:"HW8.jpg",title:"三維電腦繪圖",description:"Maya-場景建模"},   
-                {id:"9",imgSrc:"HW9.jpg",title:"三維電腦繪圖",description:"Maya-檯燈建模"} */            
+                {id:"9",imgSrc:"HW9.jpg",title:"三維電腦繪圖",description:"Maya-檯燈建模"}          
             ],
             PortfolioYT:[
                 {id:"1",youtube:"https://www.youtube.com/embed/GikJHwruOWM?si=uD5WXxC7lI0QEF1A",title:"媒體設計基礎",description:"光柵動畫:青蛙吃蟲"},
