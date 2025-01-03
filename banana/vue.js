@@ -46,7 +46,7 @@ var vueEntertainment = createApp({
 }).mount("#entertainment")
 
 $.ajax({
-    url:"/profolio",
+    url:"/portfolio",
     method: "get",
     dataType: "json",
     success: results=>{

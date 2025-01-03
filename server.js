@@ -16,7 +16,7 @@ server.use(bodyParser.urlencoded());
 var DB = require("nedb-promises");
 var PortfolioImg = DB.create(__dirname + "/profolio.db"); // 創建資料庫實例
 
-server.get("/profolio", (req, res)=>{
+server.get("/portfolio", (req, res)=>{
   //DB find
   PortfolioImg.find({}).then(results=>{
     if(results != null){
