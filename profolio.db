@@ -1,3 +1,9 @@
-{"id":"1","imgSrc":"APEX.jpg","title":"作品1","description":"什麼作品"}
-{"id":"2","imgSrc":"APEX.jpg","title":"作品2","description":"什麼作品"}
-{"id":"3","imgSrc":"APEX.jpg","title":"作品3","description":"什麼作品"}
+{id:"1",imgSrc:"HW1.jpg",title:"基礎設計",description:"色彩調和"}
+{id:"2",imgSrc:"HW2.jpg",title:"攝影",description:"危險熊熊"}
+{id:"3",imgSrc:"HW3.jpg",title:"多媒體概論",description:"人臉文字"}
+{id:"4",imgSrc:"HW4.gif",title:"動畫",description:"冒險家小布丁"}
+{id:"5",imgSrc:"HW5.png",title:"遊戲小專題-街霸:血藍風暴",description:"雙人對戰、單機格鬥"}
+{id:"6",imgSrc:"HW6.png",title:"色彩學",description:"個人海報"}
+{id:"7",imgSrc:"HW7.jpg",title:"三維電腦繪圖",description:"Maya-Glock17建模"}  
+{id:"8",imgSrc:"HW8.jpg",title:"三維電腦繪圖",description:"Maya-場景建模"} 
+{id:"9",imgSrc:"HW9.jpg",title:"三維電腦繪圖",description:"Maya-檯燈建模"}

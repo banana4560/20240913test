@@ -6,20 +6,26 @@ var server = express();
 
 var bodyParser = require("body-parser");
 
+// 使用 Express 內建的靜態檔案中介軟體提供靜態資源
+server.use(express.static(__dirname +"/banana"));
+server.use(bodyParser.json());
+server.use(bodyParser.urlencoded());
+
 
 // 引入 nedb-promises 模組，用來處理資料庫
 var DB = require("nedb-promises");
-var ProfolioDB = DB.create(__dirname + "/profolio.db"); // 創建資料庫實例
-
-// 使用 Express 內建的靜態檔案中介軟體提供靜態資源
-server.use(express.static(__dirname + "/banana"));
+var PortfolioImg = DB.create(__dirname + "/profolio.db"); // 創建資料庫實例
 
 server.get("/profolio", (req, res)=>{
   //DB find
-  var Profolio=[];
-  res.send(Profolio);
-});
-
+  PortfolioImg.find({}).then(results=>{
+    if(results != null){
+         res.send(results);
+    }else{
+        res.send("Error!");
+    }
+      })
+})
 
 /*server.get("/profolio", (req,res)=>{
   //DB
